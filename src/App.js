@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import Courses from './containers/Courses/Courses';
 import Users from './containers/Users/Users';
 import { Navbar, Nav, NavItem, Jumbotron, Button, OverlayTrigger, Popover, ButtonToolbar } from 'react-bootstrap';
@@ -48,6 +48,7 @@ class App extends Component {
             </ButtonToolbar>
           </p>
         </Jumbotron>
+        <HashRouter>
             <Switch>
               <Route path="/users" component={Users} />
               <Route path="/courses" component={Courses} /> />
@@ -55,6 +56,7 @@ class App extends Component {
               <Route path='/' exact />
               <Route render={() => <h1>Page Not Found </h1>} />
             </Switch>
+        </HashRouter>
 
       </div>
           );
