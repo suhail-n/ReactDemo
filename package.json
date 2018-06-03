@@ -15,6 +15,7 @@
     "react-scripts": "1.0.13"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "deploy": "react-demo-page -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
