@@ -1,7 +1,7 @@
 {
   "name": "react-complete-guide",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://suhail-n.github.io/react-demo",
   "dependencies": {
     "gh-pages": "^1.2.0",
