@@ -52,7 +52,7 @@ class App extends Component {
               <Route path="/users" component={Users} />
               <Route path="/courses" component={Courses} /> />
               <Redirect from='/all-courses' to='/courses' />
-              <Route path='/' />
+              <Route path='/' exact />
               <Route render={() => <h1>Page Not Found </h1>} />
             </Switch>
 
